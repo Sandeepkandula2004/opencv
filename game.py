@@ -12,7 +12,7 @@ cap = cv2.VideoCapture(0)
 while True:
     success, img = cap.read()
     
-    allhands, img = hands.findHands(img=img, draw=True, flipType=True)
+    allhands, img = hands.findHands(img=img, draw=False, flipType=True)
     
     if allhands:
 
